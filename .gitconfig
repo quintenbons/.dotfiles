@@ -1,0 +1,15 @@
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+	m = mergetool
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[user]
+	email = quintenbons@outlook.com
+	name = quintenbons
+[init]
+	defaultBranch = master
