@@ -29,11 +29,11 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -45,9 +45,9 @@ bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+d kill
 
 # rofi
-bindsym $mod+Shift+Return exec "rofi -modi drun,run -show drun"
-bindsym $mod+$alt+Return exec "rofi -modi drun,run -show run"
-bindsym $mod+Tab exec "rofi -modi drun,run -show window"
+bindsym $mod+Shift+Return exec --no-startup-id "rofi -modi drun,run -show drun"
+bindsym $mod+$alt+Return exec --no-startup-id "rofi -modi drun,run -show run"
+bindsym $mod+Tab exec --no-startup-id "rofi -modi drun,run -show window"
 
 # change focus
 bindsym $mod+h focus left
@@ -242,9 +242,13 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 
 # Mouse
-exec_always --nostartup-id xset m 1/1 0
+exec_always --no-startup-id xset m 1/1 0
 
 # Keyboard
-exec_always --nostartup-id setxkbmap -option caps:swapescape
-exec_always --nostartup-id setxkbmap -layout us -option compose:ralt
-exec_always --nostartup-id xset r rate 200 30
+exec_always --no-startup-id setxkbmap -option caps:swapescape
+exec_always --no-startup-id setxkbmap -layout us -option compose:ralt
+exec_always --no-startup-id xset r rate 200 30
+
+# Hotkeys
+bindsym $mod+b exec --no-startup-id firefox
+bindsym $mod+v workspace number $ws3 exec --no-startup-id discord && telegram
