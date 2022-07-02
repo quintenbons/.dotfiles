@@ -24,8 +24,6 @@ for f in ./.config/* ; do
   s=$(realpath $f)
   d=$(basename $f)
   echo -------- $s "$HOME/.config/$d"
-  if [[ -n $1 ]]; then
-    rm -r "$HOME/.config/$d"
-  fi
+  rm -r "$HOME/.config/$d"
   ln -s $s "$HOME/.config/$d"
 done
