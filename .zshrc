@@ -45,14 +45,6 @@ bindkey -v
 export EDITOR=nvim
 export VISUAL=nvim
 
-# Mouse
-xset m 1/1 0
-
-# Keyboard
-setxkbmap -option caps:swapescape
-setxkbmap -layout us -option compose:ralt
-xset r rate 200 30
-
 # ssh agent
 eval $(ssh-agent) > /dev/null 2> /dev/null
 # ssh-add # comment to stop asking for passphrase each time
