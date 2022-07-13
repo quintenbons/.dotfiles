@@ -18,23 +18,39 @@ Plug 'folke/lsp-colors.nvim' " LSP color highlight support fix for nvim
 Plug 'tami5/lspsaga.nvim' " lsp ui, see cs-lsp
 Plug 'maxmellon/vim-jsx-pretty'
 
+" Rust
+Plug 'simrat39/rust-tools.nvim'
+
+" Debugging
+Plug 'nvim-lua/plenary.nvim'
+Plug 'mfussenegger/nvim-dap'
+
 " Autocomplete
-Plug 'hrsh7th/nvim-cmp' " see cs-cmp
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
+" Plug 'hrsh7th/cmp-nvim-lsp'
+" Plug 'hrsh7th/cmp-buffer'
+" Plug 'hrsh7th/cmp-path'
+" Plug 'hrsh7th/cmp-cmdline'
+" Plug 'hrsh7th/nvim-cmp' " see cs-cmp
 Plug 'windwp/nvim-autopairs' " autopair
 Plug 'onsails/lspkind-nvim' " add icons to complete menu
+
+" Utils
+Plug 'tpope/vim-surround'
+Plug 'windwp/nvim-autopairs'
+
+" Snippets
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
+" Plug 'hrsh7th/cmp-vsnip' " see cs-cmp
+Plug 'hrsh7th/vim-vsnip' " see cs-cmp
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Navigation
 Plug 'preservim/nerdtree' " browse files tree
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim' " fuzzy files finding
 
-" snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-
-" git
+" Git
 Plug 'tpope/vim-fugitive'
 Plug 'samoshkin/vim-mergetool'
 

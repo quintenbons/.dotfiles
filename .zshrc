@@ -12,7 +12,10 @@ esac
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
+setopt EXTENDED_HISTORY
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
@@ -33,7 +36,9 @@ autoload -Uz vcs_info
 precmd () {
     vcs_info
     zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
-    PS1="%F{green}%n@%m%f %F{blue}%~/%f$vcs_info_msg_0_ $ "
+    PS1="
+%F{green}%n@%m%f %F{blue}%~/%f$vcs_info_msg_0_
+$ "
 }
 
 # Default terminal

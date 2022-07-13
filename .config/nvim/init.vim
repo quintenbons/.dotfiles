@@ -3,6 +3,10 @@ runtime ./extras/modules.vim
 
 " mappings
 runtime ./extras/mappings.vim
+runtime ./extras/mappings.lua
+
+" rust
+" runtime ./extras/rust.lua
 
 " prefs
 syntax enable
@@ -36,8 +40,8 @@ set expandtab
 autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=0 softtabstop=4
 
 " eye candy
-colo molokai
-" colo gruvbox
+" colo molokai
+colo gruvbox
 
 " status bar
 let g:airline_powerline_fonts = 1

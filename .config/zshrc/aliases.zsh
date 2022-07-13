@@ -28,6 +28,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias v=nvimfg
 alias vi=nvim
 alias vim=nvim
+alias vmaps="nvim ~/.config/nvim/"
 
 # Xppen
 alias xppen="/usr/lib/pentablet/pentablet"

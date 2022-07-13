@@ -245,8 +245,8 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 exec_always --no-startup-id xset m 1/1 0
 
 # Keyboard
-exec_always --no-startup-id setxkbmap -option caps:swapescape
 exec_always --no-startup-id setxkbmap -layout us -option compose:ralt
+exec_always --no-startup-id setxkbmap -option caps:swapescape
 exec_always --no-startup-id xset r rate 200 30
 
 # Hotkeys
