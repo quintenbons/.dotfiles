@@ -22,3 +22,5 @@ nn ;c :tabnew<CR>:ter cargo check<CR>
 nn ;m :lua require'rust-tools.expand_macro'.expand_macro()<CR>
 nn ;d :tabnew<CR>:ter cargo screeps deploy<CR>
 nn ;t :tabnew<CR>:ter cargo test -- --show-output<CR>
+nn ;l :silent !cargo run < input > output<CR>
+nn ;k :tabnew<CR>:ter cargo run --release

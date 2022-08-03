@@ -252,3 +252,6 @@ exec_always --no-startup-id xset r rate 200 30
 # Hotkeys
 bindsym $mod+b exec --no-startup-id firefox
 bindsym $mod+v workspace number $ws3 exec --no-startup-id discord && telegram
+
+# Main Display
+exec_always --no-startup-id xrandr --output DVI-D-0 --primary
