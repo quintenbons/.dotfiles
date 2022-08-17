@@ -25,3 +25,16 @@ picom
 discord
 telegram-desktop
 xclip
+alsa-lib
+alsa-tools
+alsa-utils
+alsa-oss
+rsync
+pulseaudio
+pulseaudio-alsa
+nodejs
+npm
+thunderbird
+maim
+tmux
+tree

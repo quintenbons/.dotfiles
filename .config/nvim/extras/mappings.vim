@@ -6,8 +6,8 @@ nn ,o :bp<CR>
 
 nn ,n :set nowrap<CR>
 
-" comment
-
+" fmt
+nn ,j :w <bar> silent !jsfmt -w %<CR>
 
 " direct execute
 nn ,f :tabnew<CR>:ter %:p<CR>
