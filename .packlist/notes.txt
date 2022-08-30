@@ -38,3 +38,4 @@ thunderbird
 maim
 tmux
 tree
+jre-openjdk
