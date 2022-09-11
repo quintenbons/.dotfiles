@@ -1,4 +1,5 @@
 dhcpcd
+ntp
 git
 vi
 vim
