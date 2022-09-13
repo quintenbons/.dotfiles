@@ -61,3 +61,4 @@ done;
 
 # MOTD
 neofetch
+source /usr/share/nvm/init-nvm.sh
