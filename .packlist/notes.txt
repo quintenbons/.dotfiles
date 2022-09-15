@@ -40,3 +40,4 @@ maim
 tmux
 tree
 jre-openjdk
+jdk-openjdk
