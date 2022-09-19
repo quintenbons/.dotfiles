@@ -51,4 +51,10 @@ nvimfg () {
     fi
 }
 
+vpnprofile () {
+  nmcli c import type openvpn file /home/bonsq/school/vpn_ensimag.ovpn
+  nmcli c modify vpn_ensimag ipv4.never-default true
+  nmcli c modify vpn_ensimag vpn.user-name bonsq
+}
+
 # complete -F _bookmark_complete cdb

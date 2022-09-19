@@ -35,3 +35,6 @@ alias xppen="/usr/lib/pentablet/pentablet"
 
 # time
 alias synctime="sudo ntpd -qg ; sudo hwclock --systohc && echo 'Success'"
+
+# VPN
+alias startvpn="nmcli c up vpn_ensimag"
