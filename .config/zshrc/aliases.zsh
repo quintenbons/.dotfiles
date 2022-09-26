@@ -36,5 +36,8 @@ alias xppen="/usr/lib/pentablet/pentablet"
 # time
 alias synctime="sudo ntpd -qg ; sudo hwclock --systohc && echo 'Success'"
 
+# mirrors
+alias mirrors="reflector --verbose -l 50 --sort rate --save /etc/pacman.d/mirrorlist"
+
 # VPN
 alias startvpn="nmcli c up vpn_ensimag"

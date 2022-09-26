@@ -3,6 +3,7 @@ ntp
 git
 vi
 vim
+man-pages
 neovim
 zsh
 openssh
