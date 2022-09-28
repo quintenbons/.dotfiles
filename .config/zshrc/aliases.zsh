@@ -41,3 +41,7 @@ alias mirrors="sudo reflector --verbose -l 50 --sort rate --save /etc/pacman.d/m
 
 # VPN
 alias startvpn="nmcli c up vpn_ensimag"
+
+# java
+alias jc="javac -d ./bin -sourcepath ./src -classpath ./bin"
+alias jr="java -classpath ./bin"
