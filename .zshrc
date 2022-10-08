@@ -62,3 +62,6 @@ done;
 # MOTD
 neofetch
 # source /usr/share/nvm/init-nvm.sh
+
+# nvm
+echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
