@@ -45,3 +45,5 @@ alias startvpn="nmcli c up vpn_ensimag"
 # java
 alias jc="javac -d ./bin -sourcepath ./src -classpath ./bin"
 alias jr="java -classpath ./bin"
+
+alias keyswap="setxkbmap -option caps:swapescape"
