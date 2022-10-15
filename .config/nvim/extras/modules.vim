@@ -54,4 +54,7 @@ Plug 'junegunn/fzf.vim' " fuzzy files finding
 Plug 'tpope/vim-fugitive'
 Plug 'samoshkin/vim-mergetool'
 
+" Solidity
+Plug 'thesis/vim-solidity', {'branch': 'main' }
+
 call plug#end()
