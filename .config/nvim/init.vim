@@ -3,7 +3,8 @@ runtime ./extras/modules.vim
 
 " mappings
 runtime ./extras/mappings.vim
-runtime ./extras/mappings.lua
+runtime ./lua/rust.lua
+runtime ./lua/md.lua
 
 " rust
 " runtime ./extras/rust.lua
