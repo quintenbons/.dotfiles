@@ -60,8 +60,7 @@ for cnf in $HOME/.config/zshrc/* ; do
 done;
 
 # MOTD
-neofetch
-# source /usr/share/nvm/init-nvm.sh
+# neofetch
 
 # nvm
 # source /usr/share/nvm/init-nvm.sh
