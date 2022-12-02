@@ -42,8 +42,8 @@ $ "
 }
 
 # Default terminal
-export TERMINAL=kitty
-export TERM=kitty
+export TERMINAL=alacritty
+export TERM=xterm-256color
 
 # Vim
 bindkey -v

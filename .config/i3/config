@@ -213,7 +213,8 @@ bindsym $mod+Shift+p exec --no-startup-id dm-tool lock
 # for_window [class="discord"] move to workspace $ws3
 
 # Compositor
-exec_always --no-startup-id picom -f -CGb --experimental-backends
+# exec_always --no-startup-id picom -f -CGb --experimental-backends
+exec_always --no-startup-id picom
 
 # Ethernet
 # exec_always ip link set enp7s0 up
