@@ -64,3 +64,6 @@ done;
 
 # nvm
 # source /usr/share/nvm/init-nvm.sh
+
+# rust
+source "$HOME/.cargo/env"

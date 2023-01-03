@@ -44,8 +44,10 @@ alias startvpn="sudo openvpn $HOME/Documents/school/vpn_ensimag.ovpn"
 alias jc="javac -d ./bin -sourcepath ./src -classpath ./bin"
 alias jr="java -classpath ./bin"
 
+# keys
 alias keyreset="setxkbmap -layout us -option"
 alias keyalt="setxkbmap -layout us -option compose:ralt"
 alias keyswap="setxkbmap -option caps:swapescape"
 alias keyrate="xset r rate 200 30"
 alias keyall="keyreset && keyalt && keyrate"
+alias kp="keyall;keyswap;"
