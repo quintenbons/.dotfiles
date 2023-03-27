@@ -52,3 +52,11 @@ alias keyrate="xset r rate 200 30"
 alias keyall="keyreset && keyalt && keyrate"
 alias kp="keyall;keyswap;"
 alias ka="keyall"
+
+alias drun="docker run -it --rm"
+alias drunn="docker run -it --rm --name"
+
+alias sudo="sudo "
+
+# bacalhau
+alias bacd="bacalhau describe"

@@ -18,5 +18,3 @@ vn ,c "ms<span style="<Esc>mma"><Esc>"mpa</span><Esc>`ma
 " latex
 nn ,a i\int \limits _{} ^{} {}<Esc>
 nn ,s i\sum \limits _{} ^{} {}<Esc>
-
-nn -- :tabnew<CR>:ter decac -c test.deca && ima test.ass<CR>
