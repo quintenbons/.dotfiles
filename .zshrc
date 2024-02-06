@@ -94,3 +94,7 @@ if [ -f '/home/bonsq/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/b
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/bonsq/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/bonsq/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
+STARKLI_ENV_PATH="$HOME/.starkli/"
+if [ -d "$STARKLI_ENV_PATH" ]; then
+  source "$STARKLI_ENV_PATH/env"
+fi;
