@@ -64,3 +64,6 @@ alias sudo="sudo "
 
 # bacalhau
 alias bacd="bacalhau describe"
+
+alias gitgud="git log --oneline --all --graph"
+alias rs="source ~/.zshrc"
