@@ -9,7 +9,14 @@
 	tool = vimdiff
 	conflictstyle = diff3
 [user]
-	email = quintenbons@outlook.com
-	name = quintenbons
+	email = QuintenBons@outlook.com
+	name = Quinten Bons
+	signingKey = ""
 [init]
 	defaultBranch = master
+[gpg]
+	program = gpg
+[commit]
+	gpgSign = false
+[tag]
+	forceSignAnnotated = false

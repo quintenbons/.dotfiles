@@ -53,6 +53,10 @@ alias keyall="keyreset && keyalt && keyrate"
 alias kp="keyall;keyswap;"
 alias ka="keyall"
 
+alias startgraphical="systemctl start gdm3"
+alias sudo="sudo "
+
+
 alias drun="docker run -it --rm"
 alias drunn="docker run -it --rm --name"
 

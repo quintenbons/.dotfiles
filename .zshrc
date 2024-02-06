@@ -34,10 +34,20 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # Custom prompt
 autoload -Uz vcs_info
 precmd () {
-    vcs_info
-    zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
-    PS1="
-%F{green}%n@%m%f %F{blue}%~/%f$vcs_info_msg_0_
+  errcode=$?
+  if [ $errcode -eq 0 ]
+  then
+    SC="%F{green}:)%f"
+  else
+    SC="%F{red}:( ($errcode)%f"
+  fi
+
+  DF='[\e[0m]'
+  vcs_info
+  zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
+
+  PS1="
+%F{green}%n@%m%f %F{blue}%~/%f$vcs_info_msg_0_ ${SC}
 $ "
 }
 
@@ -68,15 +78,19 @@ done;
 # rust
 source "$HOME/.cargo/env"
 
-# go
-export PATH=$PATH:/usr/local/go/bin
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=$PATH:/usr/local/go/bin
 
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
-export PATH=$PATH:/home/bonsq/Documents/school/blobwar
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/bonsq/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/bonsq/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/bonsq/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/bonsq/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
