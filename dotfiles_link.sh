@@ -12,15 +12,15 @@ for f in $(find . -type f -name ".*"); do
   if [ ! -d $f ]; then
     s=$(realpath $f)
     d=$(basename $f)
-    echo -------- $s "/home/bonsq/$d"
-    rm "/home/bonsq/$d"
-    ln -s $s "/home/bonsq/$d"
+    echo -------- $s "$HOME/$d"
+    rm "$HOME/$d"
+    ln -s $s "$HOME/$d"
   fi
 done
 echo
 
 # .config/*
-if [ ! -d "/home/bonsq/.config" ]; then
+if [ ! -d "$HOME/.config" ]; then
   mkdir ~/.config
   echo "made .config folder"
 fi
@@ -28,7 +28,7 @@ fi
 for f in ./.config/* ; do
   s=$(realpath $f)
   d=$(basename $f)
-  echo -------- $s "/home/bonsq/.config/$d"
-  rm -r "/home/bonsq/.config/$d"
-  ln -s $s "/home/bonsq/.config/$d"
+  echo -------- $s "$HOME/.config/$d"
+  rm -r "$HOME/.config/$d"
+  ln -s $s "$HOME/.config/$d"
 done
