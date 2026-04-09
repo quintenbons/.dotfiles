@@ -66,4 +66,9 @@ vpnprofile () {
   nmcli c modify vpn_ensimag vpn.user-name bonsq
 }
 
+alert () {
+  local msg="${*:-User triggered alert}"
+  notify-send "Custom Alert" "$msg"
+}
+
 # complete -F _bookmark_complete cdb
