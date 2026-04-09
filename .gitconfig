@@ -5,6 +5,9 @@
 [alias]
 	d = difftool
 	m = mergetool
+	s = status
+	graph = log --oneline --all --graph
+	lg = log --oneline --all --graph
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3

@@ -32,3 +32,17 @@ for f in ./.config/* ; do
   rm -r "$HOME/.config/$d"
   ln -s $s "$HOME/.config/$d"
 done
+
+# .local/scripts/*
+if [ ! -d "$HOME/.local/scripts" ]; then
+  mkdir -p ~/.local/scripts
+  echo "made .local/scripts folder"
+fi
+
+for f in ./.local/scripts/* ; do
+  s=$(realpath $f)
+  d=$(basename $f)
+  echo -------- $s "$HOME/.local/scripts/$d"
+  rm -f "$HOME/.local/scripts/$d"
+  ln -s $s "$HOME/.local/scripts/$d"
+done

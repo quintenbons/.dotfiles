@@ -1,5 +1,5 @@
 # rust
-source "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -10,7 +10,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$PATH:/usr/local/go/bin
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+(( $+commands[ng] )) && source <(ng completion script)
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/bonsq/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/bonsq/Downloads/google-cloud-sdk/path.zsh.inc'; fi
